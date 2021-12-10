@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Root*/
+:root{
+    --bs-nabar: 'Montserrat', sans-serif;
+    --bs-heading: 'Playfair Display', serif;
+}
+/*Navbar*/
+.tabs{
+    background-color: #fd7e14;
+}
+.tabs ul{
+    list-style-type: none;
+    font-family: var(--bs-nabar);
+}
+.tabs ul li a:hover{
+    color: rgb(44, 34, 31) !important;
+    border: 1px solid white;
+    padding: 2px;
+}
+h1{
+    font-family: var(--bs-nabar);
+}
+h2,h3{
+    font-family: var(--bs-heading);
+}
+small,p{
+    font-family: var(--bs-nabar);
+}
+.baker-23{
+    font-family: var(--bs-heading);
+}
+figcaption{
+    font-family: var(--bs-nabar);
+}
+/*Hero Section*/
+.hero-section{
+    background-image: url(../Images/background/hero-1.jpg.webp);
+    background-size: cover;
+}
+.skill-percent{
+    height: 8px;
+
+}
+.cake{
+    width: 40%;
+    text-align: center;
+    border: solid 1px #fd7e14;
+    border-style: dashed;
+    padding: 10px;
+}
+.cake small{
+    background-color: #fd7e14;
+}
+.cake small:hover{
+    background-color: black !important;
+    color: white !important;
+}
+/*Figure Section*/
+.first-slider img{
+    width: 70px !important;
+    height: 80px;
+}
+/*Cupcake Section*/
+.cup-cake{
+    background-image: url(../Images/background/cupcake-1.jpg);
+    background-size: 100% 100%;
+    height: 200px;
+}
+.cup-cake2{
+    background-image: url(../Images/background/cupcake-2.jpg);
+    background-size: 100% 100%;
+    height: 200px;
+}
+.cup-cake3{
+    background-image: url(../Images/background/cupcake-3.jpg);
+    background-size: 100% 100%;
+    height: 200px;
+}
+.cup-cake4{
+    background-image: url(../Images/background/cupcake-4.jpg);
+    background-size: 100% 100%;
+    height: 200px;
+}
+.cup-cake5{
+    background-image: url(../Images/background/cupcake-5.jpg);
+    background-size: 100% 100%;
+    height: 200px;
+}
+.cup-cake6{
+    background-image: url(../Images/background/cupcake-6.jpg);
+    background-size: 100% 100%;
+    height: 200px;
+}
+.cup-cake7{
+    background-image: url(../Images/background/cupcake-7.jpg);
+    background-size: 100% 100%;
+    height: 200px;
+}
+.cup-cake8{
+    background-image: url(../Images/background/cupcake-8.jpg);
+    background-size: 100% 100%;
+    height: 200px;
+}
+/*Own Cake Section*/
+.own-cake{
+    background-color: rgba(240, 135, 50, 0.1);
+    height: 700px;
+}
+.man{
+    background-image: url(../Images/background/man.webp);
+    background-size: 100% 100%;
+    height: 300px;
+    width: 80%;
+    margin-top: 10px;
+}
+.play i{
+    margin-top: 50%;
+    font-size: 30px;
+    color: orange;
+}
+.play i:hover{
+    color: black !important;
+    transform: scale(1.1);
+}
+.bghover  a:hover {
+    background-color: #fd7e14 !important;
+}
+/*Team Section*/
+.chef-1{
+    background-image: url(../Images/background/Chef-1.jpg);
+    background-size: 100% 100%;
+    height: 350px;
+    margin: 5px;
+}
+.chef-2{
+    background-image: url(../Images/background/chef-2.jpg);
+    background-size: 100% 100%;
+    height: 350px;
+    margin: 5px;
+}
+.chef-3{
+    background-image: url(../Images/background/chef-3.jpg);
+    background-size: 100% 100%;
+    height: 350px;
+    margin: 5px;
+}
+.chef-4{
+    background-image: url(../Images/background/chef-4.jpg);
+    background-size: 100% 100%;
+    height: 350px;
+    margin: 5px;
+}
+.sweet-baker p{
+    color: #fd7e14;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.baker-23{
+    margin-left: 6% !important;
+}
+/*Testimonial Section*/
+.testimonial{
+    background-color: rgba(240, 135, 50, 0.1);
+    height: 860px;
+}
+.testimonial span{
+    color: #fd7e14;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+/*Map Section*/
+.map iframe{
+    width: 100%;
+}
+/*Footer*/
+.foot{
+    background-image: url(../Images/background/footer-bg.jpg.webp);
+    background-size: cover;
+}
+.foot li{
+    list-style-type: none;
+}
+.back{
+    background-image: linear-gradient(rgba(233, 173, 84, 0.5),rgba(250, 243, 243, 0.5));
+    width: 60%;
+}
+.design-cake-23 p{
+    color: #fd7e14;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+hr{
+    width: 82%;
+    background-color: #fd7e14;
+    height: 3px;
+}
+
+.cake-23 small{
+    color: #fd7e14;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.insta-moments p{
+    color: #fd7e14;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+/*576 Media Query*/
+@media (min-width: 576px){
+    .testimonial{
+        height: 730px;
+    }
+    .play i{
+        margin-top: 30%;
+    }
+}
+
+/*768 Media Query*/
+@media (min-width: 768px){
+    .hero-section{
+        height: 400px;
+        margin-top: -5%;
+    }
+    .own-cake{
+        height: 420px;
+    }
+    .man{
+        background-size: 100% 100%;
+        height: 400px;
+        width: 50%;
+        margin-left: 50%;
+        margin-top: -48%
+    }
+    .testimonial{
+        background-color: rgba(240, 135, 50, 0.1);
+        height: 480px;
+    }
+}
+
+/*992 Media Query*/
+@media (min-width: 992px){
+    .hero-section{
+        height: 500px;
+        margin-top: -3%;
+    }
+    .man{
+        margin-top: -39%;
+        margin-left: 50%
+    }
+    .insta-moments{
+        margin-left: 15%;
+    }
+    .instagram img{
+        width: 100%;
+        height: 100px;
+    }
+    .play i{
+        margin-top: 40%;
+    }
+}
+
+/*1200 Media Query*/
+@media (min-width: 1200px){
+    .hero-white-section{
+        width: 40% !important;
+    }
+    .cake small{
+        margin-left: 40%;
+    }
+    .man{
+        width: 45%;
+        margin-left: 55%;
+        margin-top: -29%
+    }
+    .cake-23{
+        padding-left: 20%;
+    }
+    .play i{
+        margin-top: 30%;
+        font-size: 40px;
+    }
+}

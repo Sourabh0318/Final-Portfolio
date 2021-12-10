@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fashion</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap Css Link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--Font Awesome cdn link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <!--Bootstrap Icons Link-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+        <!--AOS Link-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--External Css Link-->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <!--Start of Wrapper Class-->
+       <section class="wrapper">
+           <!--Start of Desktop view navbar-->
+            <nav class="navbar d-none d-md-flex justify-content-evenly align-items-center bg-white">
+                <div>
+                    <a href="#" class="text-decoration-none"><p class="fw-bold fs-6"><img src="data:image/webp;base64,UklGRhACAABXRUJQVlA4TAQCAAAvg8AFEPcgEEhC2V90hfkfEIEAYcF/pAQJMJoGDmDZth0lug+xiQ0S1ABCzvznaRKwsP4j+j8B+o0DvLXlqy1strMw+v/oteil/0ghlr21uXtt5w0Udh/+z6XNbK+0M6u2NAFB2zttKwCzfsC9tvN22gg8fsG2B2DQP/cAYvtzzpVZfZF0qc3qS+Z2MrPDdY0ZeKnQB2AKRc83zK9M1wPjY52r2VHS3nY6WdLJWdIlnKVPywLwVmEgPfmPN5MCyT4RSPffqS6Wrq6WvUtylj8t8RHwBYH83Cbik6yXFMj3X7HdvpHOZlbVN+lqZhepMbPDXXJm1iwYgKC8B8ZWegFDgnl6SI8IQfLA2EoB8N/RZ21W3SXpYHaWTmYHSXI7s2PZA5hVOMCgzyfQJmIrSX2ih1GSwgzDV1ziaHbSp0tUZo2ak5lVTuUz8CiJ0CY0wjMR9PlKRPDyPRCDvnLLXYrMdpeDmR0uWhiAQaUwKx0gJLoimJ8jMD6VX6nJXRd8ukZLfYTYfssv+AxepX+pMqudVhyAl4ojtKkRnitEmIIW/qWT2UErPoC3ygfoEx3QrtDDqO00Zna4S5f6VjSzNKgDhlZ6RRi0ggfGVnpO3RbkLFs1BYEV1JOf2zUUyEa/BbmMnXM+rqI+M3mtopDhtQk1zsx27q78m3X06IEpKLmCfADm0Eo=" alt=""></p></a>
+                </div>
+                
+                <div class="pt-2 sub-nav">
+                    <ul class="d-flex justify-content-evenly w-75%">
+                        <li class="px-lg-3"><a href="#" class="text-decoration-none"><small>Home</small></a></li>
+                        <li class="px-lg-3"><a href="#" class="text-decoration-none"><small>Shop</small></a></li>
+                        <li class="px-lg-3"><a href="#" class="text-decoration-none"><small>About</small></a></li>
+                        <li class="px-lg-3"><a href="#" class="text-decoration-none"><small>Latest</small><sup class="hot rounded-3 shadow-sm">HOT</sup></a></li>
+                        <li class="px-lg-3"><a href="#" class="text-decoration-none"><small>Blog</small></a></li>
+                        <li class="px-lg-3"><a href="#" class="text-decoration-none"><small>Pages</small></a></li>
+                        <li class="px-lg-3"><a href="#" class="text-decoration-none"><small>Contact</small></a></li>
+                    </ul>
+                </div>
+
+                <div class="pt-2 sub-nav2">
+                    <ul class="d-flex justify-content-evenly align-items-center">
+                        <li class="px-lg-3"><a href="#"><i class="bi bi-search"></i></a></li>
+                        <li class="px-lg-3"><a href="#"><i class="bi bi-person-lines-fill"></i></a></li>
+                        <li class="px-lg-3"><a href="#"><i class="bi bi-cart3"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Start of Mobile-view navbar-->
+            <nav class="mob-nav d-flex justify-content-between d-lg-none d-md-none bg-white">
+                <div class="logo">
+                    <a href="#" class="text-decoration-none"><h4 class="ps-2"><img src="data:image/webp;base64,UklGRhACAABXRUJQVlA4TAQCAAAvg8AFEPcgEEhC2V90hfkfEIEAYcF/pAQJMJoGDmDZth0lug+xiQ0S1ABCzvznaRKwsP4j+j8B+o0DvLXlqy1strMw+v/oteil/0ghlr21uXtt5w0Udh/+z6XNbK+0M6u2NAFB2zttKwCzfsC9tvN22gg8fsG2B2DQP/cAYvtzzpVZfZF0qc3qS+Z2MrPDdY0ZeKnQB2AKRc83zK9M1wPjY52r2VHS3nY6WdLJWdIlnKVPywLwVmEgPfmPN5MCyT4RSPffqS6Wrq6WvUtylj8t8RHwBYH83Cbik6yXFMj3X7HdvpHOZlbVN+lqZhepMbPDXXJm1iwYgKC8B8ZWegFDgnl6SI8IQfLA2EoB8N/RZ21W3SXpYHaWTmYHSXI7s2PZA5hVOMCgzyfQJmIrSX2ih1GSwgzDV1ziaHbSp0tUZo2ak5lVTuUz8CiJ0CY0wjMR9PlKRPDyPRCDvnLLXYrMdpeDmR0uWhiAQaUwKx0gJLoimJ8jMD6VX6nJXRd8ukZLfYTYfssv+AxepX+pMqudVhyAl4ojtKkRnitEmIIW/qWT2UErPoC3ygfoEx3QrtDDqO00Zna4S5f6VjSzNKgDhlZ6RRi0ggfGVnpO3RbkLFs1BYEV1JOf2zUUyEa/BbmMnXM+rqI+M3mtopDhtQk1zsx27q78m3X06IEpKLmCfADm0Eo=" alt=""></h4></a>
+                </div>
+    
+                <div class="px-3 sub-mobile-nav">
+                    <a href="!#" data-bs-target="#mobile-nav" data-bs-toggle="offcanvas">
+                        <i class="fas fa-bars text-secondary"></i>
+                    </a>
+                    <!--Offcanvas-->
+                    <div class="offcanvas offcanvas-top back" id="mobile-nav">
+                        <div class="offcanvas-header">
+                            <h4 class="offcanvas-title fw-bold">TIME<span class="text-danger">ZONE</span></h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body mx-auto">
+                            <ul class="pt-2">
+                                <li><a href="#" class="text-decoration-none text-dark">Home</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Shop</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">About</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Latest</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Blog</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Pages</a></li>
+                                <li><a href="#" class="text-decoration-none text-dark">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Offcanvas end-->
+                </div>
+            </nav>
+            <!--Start of hero-section-->
+            <section class="hero-section">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <div class="content p-2 col-md-6 col-lg-4 col-xl-4">
+                        <h1 class="display-2">Select Your New Perfect Style</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quam laboriosam maxime praesentium, in vel quod quo optio? Quis debitis nesciunt repudiandae ratione voluptatibus ad dignissimos nemo ullam. Esse, odio.</p>
+                        <p class="shop">
+                            <input type="button" value="SHOP NOW">
+                            <span class="bgred"></span>
+                        </p>
+                    </div>
+
+                    <div class="d-none d-sm-block px-2 h-sm-2 hero-image-23">
+                        <img src="image/background/hero-image.webp" alt="">
+                    </div>
+                </div>
+            </section>
+            <!--Start of arrival section-->
+            <section class="arrival container">
+                <h2 class="text-center">New Arrivals</h2>
+                <small class="pitem-23 text-muted col-lg-6">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                </small>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-between mt-5">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 new" data-aos="flip-up" data-aos-easing="ease-in" data-aos-duration="2000">
+                            <figure class="px-sm-1 px-lg-0">
+                            <img src="image/illustration/Arrival-1.jpg" alt="">
+                            <figcaption>Thermo Ball Etip Gloves<p>$45,743</p></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2 mt-sm-0 new" data-aos="flip-up" data-aos-easing="ease-in" data-aos-duration="2000">
+                            <figure class="px-sm-1 px-lg-0">
+                            <img src="image/illustration/Arrival-2.jpg" alt="">
+                            <figcaption>Thermo Ball Etip Gloves<p>$45,743</p></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2 mt-md-0 new" data-aos="flip-up" data-aos-easing="ease-in" data-aos-duration="2000">
+                            <figure class="px-sm-1 px-lg-0">
+                            <img src="image/illustration/Arrival-3.jpg" alt="">
+                            <figcaption>Thermo Ball Etip Gloves<p>$45,743</p></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+            </section>
+            <!--Start of Watch Images-->
+            <section class="container-fluid">
+                <div class="row justify-content-center watches-53">
+                    <div class="col-12 col-sm-12 col-md-4 woman-watch" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-duration="3000">
+                        <img src="image/illustration/Arrival-3.jpg" alt="">
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3 mt-4 mt-md-0 black" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-duration="3000">
+                        <img class="black-watch" src="image/illustration/Arrival-5.jpg" alt="">
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 mt-4 mt-md-0 smart-watch" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-duration="3000">
+                        <img class="blue-watch" src="image/illustration/Arrival-7.jpg" alt="">
+                        
+                        <div class="fossil mt-3 mt-md-2">
+                            <img  src="image/illustration/popular-6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Start of Popular Items Section-->
+            <section class="container mt-5 popular-items-23">
+                <h2 class="text-center">Popular Items</h2>
+                <small class="pitem-23 text-muted col-lg-6">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                </small>
+
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="d-flex flex-wrap justify-content-center popular">
+                            <div class="col-12 col-sm-6 col-md-4" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                <figure class="text-center">
+                                    <img src="image/illustration/popular items.jpg" alt="">
+                                    <figcaption><div class="h-line mt-4"></div><h4>Thermo Ball Etip Gloves</h4>$ 45,743</figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                <figure class="text-center">
+                                    <img src="image/illustration/popular-2.jpg" alt="">
+                                    <figcaption><div class="h-line mt-4"></div><h4>Thermo Ball Etip Gloves</h4>$ 45,743</figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                <figure class="text-center">
+                                    <img src="image/illustration/popular-3.jpg" alt="">
+                                    <figcaption><div class="h-line mt-4"></div><h4>Thermo Ball Etip Gloves</h4>$ 45,743</figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                <figure class="text-center">
+                                    <img src="image/illustration/popular-4.jpg" alt="">
+                                    <figcaption><div class="h-line mt-4"></div><h4>Thermo Ball Etip Gloves</h4>$ 45,743</figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                <figure class="text-center">
+                                    <img src="image/illustration/popular-5.jpg" alt="">
+                                    <figcaption><div class="h-line mt-4"></div><h4>Thermo Ball Etip Gloves</h4>$ 45,743</figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4" data-aos="zoom-in-down" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                <figure class="text-center">
+                                    <img src="image/illustration/popular-6.jpg" alt="">
+                                    <figcaption><div class="h-line mt-4"></div><h4>Thermo Ball Etip Gloves</h4>$ 45,743</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5 product-23">
+                        <a class="p-3 text-white text-decoration-none" href="#">VIEW MORE PRODUCTS</a>
+                    </div>
+                </div>
+            </section>
+            <!--Start of Video Section-->
+            <section class="mt-5 pt-5 video text-center">
+                <a href="https://youtu.be/KMc6DyEJp04"><i class="far fa-play-circle text-white fs-1"></i></a>
+            </section>
+            <!--Choice Section-->
+            <section class="container mt-5 watch-choice-43">
+                <div class="row justify-content-evenly align-items-center w-100" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="px-2 col-md-5" >
+                        <h2>Watch of Choice</h2>
+                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        <div class="view-watches-23">
+                            <a href="#" class="border-none btn btn-lg rounded-0" role="button">Show watches</a>
+                        </div>
+                    </div>
+
+                    <div class="choice mt-3 mt-md-0 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                        <img src="image/illustration/choice-1.jpg" alt="">
+                    </div>
+                </div>
+                
+                <div class="row justify-content-evenly align-items-center mt-5" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="choice1 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                        <img src="image/illustration/Arrival-6.jpg" alt="">
+                    </div>
+
+                    <div class="px-3 mt-3 col-md-5">
+                        <h2>Watch of Choice</h2>
+                        <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        <div class="view-watches-23">
+                            <a href="#" class="border-none btn btn-lg rounded-0" role="button">Show watches</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Start of Shipping Method-->
+            <section class="container mt-5">
+                <div class="row justify-content-evenly align-items-center payment-method-23">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2 payment">
+                        <img src="image/illustration/box.png" alt="">
+                        <small class="text-white py-2 fw-bold fs-6 d-block">Free Shipping Method</small>
+                        <p class="text-light">aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2 payment">
+                        <img src="image/illustration/open-lock.png" alt="">
+                        <small class="text-white py-2 fw-bold fs-6 d-block">Secure Payment System</small>
+                        <p class="text-light">aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2 payment">
+                        <img src="image/illustration/refresh.png" alt="">
+                        <small class="text-white py-2 fw-bold fs-6 d-block">Secure Payment System</small>
+                        <p class="text-light">aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                    </div>
+                </div>
+            </section>
+            <!--Start of footer-->
+            <footer class="container foot">
+                <div class="row justify-content-evenly">
+                    <div class="col-12 col-sm-6 col-md-3 zone">
+                        <a href="#" class="text-decoration-none"><h3 class="text-dark fw-bold ">Time <span class="text-danger fw-bold">Zone</span></h3></a>
+                        <p class="pt-3 text-secondary">Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
+                    </div>
+
+                    <div class="quick col-12 col-sm-6 col-md-3">
+                        <h4>Quick Links</h4>
+                            <li><a href="#" class="text-decoration-none text-secondary">About</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Offers & Discounts</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Get Coupon</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Contact Us</a></li>
+                    </div>
+
+                    <div class="quick col-12 col-sm-6 col-md-3">
+                        <h4>New Products</h4>
+                            <li><a href="#" class="text-decoration-none text-secondary">Woman Cloth</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Fashion Accessories</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Man Accessories</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Rubber made Toys</a></li>
+                    </div>
+
+                    <div class="quick col-12 col-sm-6 col-md-3">
+                        <h4>Support</h4>
+                            <li><a href="#" class="text-decoration-none text-secondary">Frequently Asked Questions</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Terms & Conditions</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Privacy Policy</a></li>
+                            <li><a href="#" class="text-decoration-none text-secondary">Report a Payment Issue</a></li>
+                    </div>
+                </div>
+
+                <div class="container foot-end">
+                    <div class="d-flex flex-wrap justify-content-between py-4">
+                        <div>
+                            <p>Copyright ©2021 All rights reserved | This template is made with <i class="fas fa-heart heart-23"></i> by Sourabh</p>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-behance"></i></li>
+                            <li><i class="fas fa-globe"></i></li>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!--End of wrapper-->
+
+
+        <!--Javascript-->
+        <!--Offcanvas-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!--External Script--> 
+        <script src="javascript/script.js"></script>  
+    </body>
+</html>

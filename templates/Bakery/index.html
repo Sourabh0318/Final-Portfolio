@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bakery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--Font Awesome link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <!--AOS Link-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--Owl Carousel Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <!--CSS Link-->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <!--Wrapper Class-->
+        <section class="wrapper">
+            <!--Navbar-->
+            <nav class="navbar d-none d-md-block">
+                <div class="d-flex justify-content-between align-items-center pb-2">
+                    <div class="px-4 ms-5 d-flex">
+                        <small>
+                            <select class="border-0 text-muted bg-white">
+                                <option value="1" class="bg-black text-white">EUR</option>
+                                <option selected class="bg-black text-white">USD</option>
+                            </select>
+                        </small>
+                        <div class="vr mx-2"></div>
+                        <small>
+                            <select class="border-0 text-muted bg-white">
+                                <option value="1" class="bg-black text-white">Spanish</option>
+                                <option selected class="bg-black text-white">ENG</option>
+                            </select>
+                        </small>
+                        <div class="vr mx-2"></div>
+                        <small>
+                            <select class="border-0 text-muted bg-white">
+                                <option selected>Sign In</option>
+                            </select>
+                        </small>
+                    </div>
+
+                    <div class="px-4">
+                        <a href="#">
+                        <img src="Images/illustrations/cup-cake.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="px-4 me-5">
+                        <small class="px-lg-2"><img src="Images/illustrations/magnifying-glass.png" alt=""> | </small>
+                        <small class="px-lg-"><img src="Images/illustrations/heart.png" class="pe-2" alt=""> <img src="Images/illustrations/shopping-bag.png" class="pe-2" alt=""></small>
+                        <small>Cart: <span class="fw-bold">$0.00</span></small>
+                    </div>
+                </div>
+                <hr class="p-0.8 m-0">
+
+                <div class="d-flex justify-content-center align-items-center tabs">
+                    <ul class="d-flex justify-content-center pt-2">
+                        <li class="px-2"><a class="text-decoration-none text-white" href="#">Home</a></li>
+                        <li class="px-2"><a class="text-decoration-none text-white" href="#">About</a></li>
+                        <li class="px-2"><a class="text-decoration-none text-white" href="#">Shop</a></li>
+                        <li class="px-2"><a class="text-decoration-none text-white" href="#">Pages</a></li>
+                        <li class="px-2"><a class="text-decoration-none text-white" href="#">Blog</a></li>
+                        <li class="px-2"><a class="text-decoration-none text-white" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Mobile Nav-->
+            <nav class="mobile-nav d-md-none">
+                <div class="d-flex justify-content-between">
+                    <div class="px-2 py-1">
+                        <a href="#">
+                            <img src="Images/illustrations/cup-cake.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="px-2 py-2">
+                        <a href="!#" data-bs-target="#mobile-nav" data-bs-toggle="offcanvas">
+                            <i class="fas fa-bars text-warning"></i>
+                        </a>
+                        <div class="offcanvas offcanvas-end back" id="mobile-nav">
+                            <div class="offcanvas-header">
+                                <h4 class="offcanvas-title"><img src="Images/illustrations/icon.webp" alt=""></h4>
+                                <button type="button" class="btn-close btn-outline-light" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="pt-2">
+                                    <li class="px-2"><a class="text-decoration-none text-dark" href="#">Home</a></li>
+                                    <li class="px-2"><a class="text-decoration-none text-dark" href="#">About</a></li>
+                                    <li class="px-2"><a class="text-decoration-none text-dark" href="#">Shop</a></li>
+                                    <li class="px-2"><a class="text-decoration-none text-dark" href="#">Pages</a></li>
+                                    <li class="px-2"><a class="text-decoration-none text-dark" href="#">Blog</a></li>
+                                    <li class="px-2"><a class="text-decoration-none text-dark" href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--Hero Section-->
+            <section class="hero-section d-flex justify-content-center align-items-center">
+                <div class="w-75 my-2 my-xl-0 pt-3 pb-3 ps-3 pe-3 bg-white hero-white-section">
+                    <div class="w-100 cake">
+                        <h1 class="fw-bold fst-italic">Making your life sweeter one bite at a time</h1>
+                        <small class="d-block col-xl-3 text-white fw-bold px-3 py-2"><a href="#" class="text-decoration-none text-white fw-bold">OUR CAKES</a></small>
+                    </div>
+                </div>
+            </section>
+            <!--About Cake Shop Section-->
+            <section class="container mt-5">
+                <div class="row col-10 justify-content-center">
+                        <div class="col-12 col-md-6 design-cake-23">
+                            <p>ABOUT CAKE SHOP</p>
+                            <h2 class="fw-bold fst-italic">Cakes and bakes from the<br> house of Queens!</h2>
+                            <small>The "Cake Shop" is a Jordanian Brand that started as a small family business. The owners are Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff of 80 employees.</small>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class=" d-flex justify-content-between col-12 mt-3 ms-md-2">
+                                <small>CAKE DESIGN</small>
+                                <small class="ps-5">95%</small>   
+                            </div>
+                            <div class="progress skill-percent rounded-0 w-100 ms-md-2 mt-lg-2">
+                                <div class="progress-bar bg-black" role="progressbar" style="width: 95%" aria-valuenow="95">
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between col-12 mt-3 ms-md-2">
+                                <small>CAKE CLASS</small>
+                                <small>80%</small>
+                            </div>
+                            <div class="progress skill-percent rounded-0 w-100 ms-md-2 mt-lg-1">
+                                <div class="progress-bar bg-black" role="progressbar" style="width: 80%" aria-valuenow="80">
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between col-12 mt-3 ms-md-2">
+                                <small>CAKE RECIPES</small>
+                                <small>90%</small>
+                            </div>
+                            <div class="progress skill-percent rounded-0 w-100 ms-md-2 mt-lg-1">
+                                <div class="progress-bar bg-black" role="progressbar" style="width: 90%" aria-valuenow="90">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!--Figure Section-->
+            <section class="container mt-5">
+                <div class="row owl-carousel owl-theme first-slider">
+                        <div class="">
+                            <figure class="">
+                                <img src="Images/illustrations/cookies.png" alt="">
+                                <figcaption class="mt-2">
+                                    <p>BISCUIT</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="">
+                            <figure class="">
+                                <img src="Images/illustrations/donut.png" alt="">
+                                <figcaption class="mt-2">
+                                    <p>DONUT</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="">
+                            <figure class="">
+                                <img src="Images/illustrations/cupcake.png" alt="">
+                                <figcaption class="mt-2">
+                                    <p>CUPCAKE</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="">
+                            <figure class="">
+                                <img src="Images/illustrations/cupcake.png" alt="">
+                                <figcaption class="mt-2">
+                                    <p>CUPCAKE</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="">
+                            <figure class="">
+                                <img src="Images/illustrations/butter.png" alt="">
+                                <figcaption class="mt-2">
+                                    <p>BUTTER</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="">
+                            <figure class="">
+                                <img src="Images/illustrations/donut.png" alt="">
+                                <figcaption class="mt-2">
+                                    <p>Chocolate Roll</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="">
+                            <figure class="">
+                                <img src="Images/illustrations/cookies.png" alt="">
+                                <figcaption class="mt-2">
+                                    <p>Cookies</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+            </section>
+            <hr class="mx-auto">
+            <!--Cupcake Section-->
+            <section class="container text-center">
+                <div class="row justify-content-lg-center">
+                    <!--Cupcake 1-->
+                    <div class="col-10 col-sm-5 col-md-3 col-lg-3 m-sm-3 m-4 m-lg-0 mt-lg-3">
+                        <div class="cup-cake" data-aos="zoom-in-up" data-aos-duration="3000">
+                            <span>Cupcake</span>
+                        </div>
+                        <div class="text-center">
+                            <h6>Dozen Cupcakes</h6>
+                            <small>$32.00</small>
+                        </div>
+                    </div>
+                    <!--Cupcake 2-->
+                    <div class="col-10 col-sm-5 col-md-3 col-lg-3 m-sm-3 m-4 m-lg-0 mt-lg-3">
+                        <div class="cup-cake2" data-aos="zoom-in-up" data-aos-duration="3000">
+                            <span>Cupcake</span>
+                        </div>
+                        <div class="text-center">
+                            <h6>Cookies and Cream</h6>
+                            <small>$30.00</small>
+                        </div>
+                    </div>
+                    <!--cupcake 3-->
+                    <div class="col-10 col-sm-5 col-md-3 col-lg-3 m-sm-3 m-4 m-lg-0 mt-lg-3">
+                        <div class="cup-cake3" data-aos="zoom-in-up" data-aos-duration="3000">
+                            <span>Cupcake</span>
+                        </div>
+                        <div class="text-center">
+                            <h6>Gluten free mini dozen</h6>
+                            <small>$31.00</small>
+                        </div>
+                    </div>
+                    <!--Cupcake 4-->
+                    <div class="col-10 col-sm-5 col-md-3 col-lg-3 m-sm-3 m-4 m-lg-0 mt-lg-3">
+                        <div class="cup-cake4" data-aos="zoom-in-up" data-aos-duration="3000">
+                            <span>Cupcake</span>
+                        </div>
+                        <div class="text-center">
+                            <h6>Cookie dough</h6>
+                            <small>$25.00</small>
+                        </div>
+                    </div>
+                    <!--Cupcake 5-->
+                    <div class="col-10 col-sm-5 col-md-3 col-lg-3 m-sm-3 m-4 m-lg-0 mt-lg-2">
+                        <div class="cup-cake5" data-aos="zoom-in-up" data-aos-duration="3000">
+                            <span>Cupcake</span>
+                        </div>
+                        <div class="text-center">
+                            <h6>Vanilla Salted Caramel</h6>
+                            <small>$05.00</small>
+                        </div>
+                    </div>
+                    <!--Cupcake 6-->
+                    <div class="col-10 col-sm-5 col-md-3 col-lg-3 m-4 m-sm-3 m-lg-0 mt-lg-2">
+                        <div class="cup-cake6" data-aos="zoom-in-up" data-aos-duration="3000">
+                            <span>Cupcake</span>
+                        </div>
+                        <div class="text-center">
+                            <h6>German Chocolate</h6>
+                            <small>$14.00</small>
+                        </div>
+                    </div>
+                    <!--Cupcake 7-->
+                    <div class="col-10 col-sm-5 col-md-3 col-lg-3 m-sm-3 m-4 m-lg-0 mt-lg-2">
+                        <div class="cup-cake7" data-aos="zoom-in-up" data-aos-duration="3000">
+                            <span>Cupcake</span>
+                        </div>
+                        <div class="text-center">
+                            <h6>Dulce de leche</h6>
+                            <small>$32.00</small>
+                        </div>
+                    </div>
+                    <!--Cupcake 8-->
+                    <div class="col-10 col-sm-5 col-md-3 col-lg-3 m-sm-3 m-4 m-lg-0 mt-lg-2">
+                        <div class="cup-cake8" data-aos="zoom-in-up" data-aos-duration="3000">
+                            <span>Cupcake</span>
+                        </div>
+                        <div class="text-center">
+                            <h6>Mississippi Mud</h6>
+                            <small>$08.00</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Own Cake section-->
+            <section class="container-fluid own-cake mt-5">
+                <div class="row justify-content-center justify-content-md-start align-items-center">
+                    <div class="pt-4 cake-23 col-md-4 col-xl-5">
+                        <small>CLASS CAKES</small>
+                        <h3 class="fst-italic fw-bold">Made from your own hands</h3>
+                        <div>
+                            <!--Form Section-->
+                            <form data-aos="fade-up" data-aos-duration="1000" class="bghover">
+                                <input class="mt-2 border-0 col-12 p-2" type="text" placeholder="Name">
+                                <input class="mt-2 border-0 col-12 p-2" type="tel" placeholder="Phone">
+                                <select class="form-select mt-2 border-0 text-muted">
+                                    <option selected>Studying class</option>
+                                    <option value="1">Writing class</option>
+                                    <option value="2">Reading class</option>
+                                </select>
+                                <input class="mt-2 border-0 col-12 p-2" type="text" placeholder="Type your requirements">
+                                <a class="col-12 text-center btn bg-black mt-3 text-white text-uppercase" role="button" href="#">Registration</a>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="man col-12 text-center" data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <a class="play" href="https://www.youtube.com/watch?v=8PJ3_p7VqHw&list=RD8PJ3_p7VqHw&start_radio=1"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!--Team Section-->
+            <section class="container mt-5 overflow-hidden">
+                <div class="d-flex justify-content-between px-sm-4 sweet-baker col-10 mx-auto">
+                    <p>Our Team</p>
+                    <a href="#"><button type="button" class="btn btn-outline-dark rounded-0">Join Us</button>
+                    </a>
+                </div>
+                    <small class="fst-italic fw-bold px-sm-4 ps-xl-5 ms-xl-5 fs-2 baker-23">Sweet Baker</small>
+                    <div class="row justify-content-center mt-5">
+                        <!--Chef-1-->
+                        <div class="col-10 col-sm-5 col-md-3 col-lg-2 chef-1" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"></div>
+                        <!--Chef-2-->
+                        <div class="col-10 col-sm-5 col-md-3 col-lg-2 chef-2" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"></div>
+                        <!--Chef-3-->
+                        <div class="col-10 col-sm-5 col-md-3 col-lg-2 chef-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></div>
+                        <!--Chef-4-->
+                        <div class="col-10 col-sm-5 col-md-3 col-lg-2 chef-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></div>
+                    </div>
+            </section>
+            <!--Testimonial-->
+            <section class="container-fluid testimonial mt-5">
+                <span class="d-block text-center pt-5">Testimonial</span>
+                <h4 class="text-center fst-italic fw-bold">Our client say</h4>
+                <div class="row justify-content-center justify-content-md-between mt-5 ">
+                    <!--White Section-1-->
+                    <div class="bg-white col-10 col-sm-8 col-md-5 ms-md-3 ms-lg-5" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="d-flex justify-content-between px-2 py-2">
+                            <div class="d-flex">
+                                <div>
+                                    <img class="rounded-circle" src="Images/illustrations/testimonal1.webp" alt="">
+                                </div> 
+                                <div class="ps-2">
+                                    <h5>Kerry D.Silva</h5>
+                                    <small>New York</small>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="Images/illustrations/star.png" alt="">
+                                <img src="Images/illustrations/star.png" alt="">
+                                <img src="Images/illustrations/star.png" alt="">
+                                <img src="Images/illustrations/star.png" alt="">
+                                <img src="Images/illustrations/rating.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="p-3">
+                            <small class="fst-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium harum voluptates porro sequi! Culpa aliquid officia voluptatum pariatur repellendus, optio, facilis vel voluptatibus eius amet in delectus illo suscipit explicabo!</small>
+                        </div>
+                    </div>
+                    <!--White Section-2-->
+                    <div class="bg-white col-10 col-sm-8 col-md-5 mt-3 mt-md-0 me-md-3 me-lg-5" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="d-flex justify-content-between px-2 py-2">
+                            <div class="d-flex">
+                                <div>
+                                    <img class="rounded-circle" src="Images/illustrations/testimonal1.webp" alt="">
+                                </div> 
+                                <div class="ps-2">
+                                    <h5>Kerry D.Silva</h5>
+                                    <small>New York</small>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="Images/illustrations/star.png" alt="">
+                                <img src="Images/illustrations/star.png" alt="">
+                                <img src="Images/illustrations/star.png" alt="">
+                                <img src="Images/illustrations/star.png" alt="">
+                                <img src="Images/illustrations/rating.png" alt="">
+                            </div>
+                        </div>
+
+                            <div class="p-3">
+                                <small class="fst-italic">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium harum voluptates porro sequi! Culpa aliquid officia voluptatum pariatur repellendus, optio, facilis vel voluptatibus eius amet in delectus illo suscipit explicabo!</small>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!--Intsagram Section-->
+            <section class="instagram mt-5">
+                <div class="d-flex flex-wrap flex-lg-nowrap justify-content-sm-center justify-content-lg-start align-items-center col-10 mx-auto">
+                    <div class="insta-moments col-xl-3">
+                        <p>Follow Us on Intagram</p>
+                        <h3 class="fw-bold fst-italic">Sweet moments are saved as memories.</h3>
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-md-center justify-content-lg-end me-lg-5">
+                            <!--Image 1-->
+                            <div class="col-sm-6 col-md-4 col-lg-3" data-aos="flip-up"
+                            data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <img src="Images/illustrations/instagram1.webp" alt="">
+                            </div>
+                            <!--Images 2-->
+                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3 mt-sm-0 mt-lg-2 ms-md-5 ms-lg-1" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <img src="Images/illustrations/instagram2.webp" alt="">
+                            </div>
+                            <!--Images 3-->
+                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3 mt-lg-0 ms-lg-1" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <img src="Images/illustrations/instagram.webp" alt="">
+                            </div>
+                            <!--Image 4-->
+                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3 mt-lg-0 ms-md-5 ms-lg-1"
+                            data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <img src="Images/illustrations/instagram4.webp" alt="">
+                            </div>
+                            <!--Image 5-->
+                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3 mt-lg-2 ms-lg-1" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <img src="Images/illustrations/instagram5.webp" alt="">
+                            </div>
+                            <!--Image 6-->
+                            <div class="col-sm-6 col-md-4 col-lg-3 mt-3 mt-lg-0 ms-md-5 ms-lg-1" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <img src="Images/illustrations/instagram.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Map Section-->
+            <section class="map mt-5">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175952.4002327863!2d-107.79437386116062!3d38.98071796801756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874014749b1856b7%3A0xc75483314990a7ff!2sColorado%2C%20USA!5e0!3m2!1sen!2sin!4v1635962539793!5m2!1sen!2sin" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <footer class="container-fluid foot">
+                <div class="row justify-content-center">
+                        <div class="col-12 col-sm-6 col-md-4 text-white p-5">
+                            <h4>Working Hours</h4>
+                            <li>Monday-Friday: 08:00 am - 08:30 pm</li>
+                            <li>Saturday: 10:00 am - 16:30 pm</li>
+                            <li>Sunday: 10:00 am - 16:30 pm</li>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 text-white p-5">
+                            <img src="Images/illustrations/icon.webp" alt="">
+                            <p class="pt-2">Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            <div class="row justify-content-center text-white py-2">
+                                <li class="px-1 col-1 me-1"><a href="#" class="text-decoration-none"><i class="fab fa-facebook text-white"></i></a></li>
+                                <li class="px-1 col-1 ms-1"><a href="#" class="text-decoration-none"><i class="fab fa-twitter-square text-white"></i></a></li>
+                                <li class="px-1 col-1 ms-2"><a href="#" class="text-decoration-none"><i class="fab fa-instagram-square text-white"></i></a></li>
+                                <li class="px-1 col-1 ms-2"><a href="#" class="text-decoration-none"><i class="fab fa-youtube text-white"></i></a></li>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 text-white p-5 pt-md-5 p-md-0">
+                            <h4>SUBSCRIBE</h4>
+                            <p>Get latest updates and offers.</p>
+                            <input type="email" class="p-1" placeholder="Email">
+                            <span><button class="btn btn-outline-light p-1 mb-1 mt-2 mt-lg-0">Send</button></span>
+                        </div>
+                    </div>
+            </footer>
+        </section>
+
+        <!--Javascript-->
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!--Offcanvas-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!--Owl Carousel-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--External js-->
+        <script src="javascript/script.js"></script>
+    </body>
+</html>
