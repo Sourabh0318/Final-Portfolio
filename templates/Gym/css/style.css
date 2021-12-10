@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --bs-navbar1: 'Poppins', sans-serif;
+    --bs-hero-head: 'Poppins', sans-serif;
+}
+
+.nav-start small{
+    font-family: var(--bs-navbar1);
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar ul li a{
+    font-size: 12px;
+    font-family: var(--bs-navbar1);
+}
+.navbar span{
+    display:block;
+    width:0%;
+    height:3px;
+    background:#2a2a2a;
+    transition:0.3s;
+}
+.navbar ul li:hover span{
+    width: 100%;
+}
+.contact-number {
+    font-family: var(--bs-navbar1);
+}
+.hero-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(../image/background/header-bg.jpg.webp);
+    background-size: 100% 100%;
+    height: 200px;
+}
+.fade-in{
+    animation: fade-in ease 3s;
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+.hero-section h1{
+    padding-top: 10%;
+    font-family: var(--bs-hero-head);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--bs-hero-head);
+}
+small, p{
+    font-family: var(--bs-navbar1);
+}
+.bgblack{
+    transition: 0.4s;
+}
+.bgblack:hover{
+    background-color: #2a2a2a;
+    color: #eeeeee;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.transaction{
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)), url(../image/illustrations/callto-bg.jpg.webp);
+    background-size: 100% 100%;
+}
+.transaction small{
+    margin-left: 8%;
+    text-align: center;
+}
+.transaction a{
+    background-color: #f6214b;
+    margin-left: 10%;
+}
+.course-table .schedule:hover{
+    background-color: #f6214b;
+}
+.purchase:hover{
+    background-color: #D60f44;
+}
+.be-icon i{
+    font-size: 35px;
+}
+.BMI-calculation{
+    background-color: #f6214b;
+    height: 400px;
+}
+.BMI-calculation input{
+    background-color: #f6214b;
+}
+.calculation-23 input:hover{
+    border: 2px solid violet !important;
+}
+.calculation-23 a:hover{
+    background-color: #2a2a2a !important;
+    color: white;
+}
+.gym-course:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.gym-course-1{
+    background-image: url(../image/illustrations/Course1.jpg);
+    background-size: 100% 100%;
+    height: 150px;
+}
+.gym-course-1 small{
+    display: block;
+    background-color: #f6214b;
+    color: #fff;
+    padding: 10px 40px;
+    margin-left: 20px;
+    margin-top: 100px;
+    position: absolute;
+    display: flex;
+}
+.gym-course-2{
+    background-image: url(../image/illustrations/Course2.jpg);
+    background-size: 100% 100%;
+    height: 150px;
+}
+.gym-course-2 small{
+    display: block;
+    background-color: #f6214b;
+    color: #fff;
+    padding: 10px 40px;
+    margin-left: 20px;
+    margin-top: 100px;
+    position: absolute;
+    display: flex;
+}
+.gym-course-3{
+    background-image: url(../image/illustrations/Course3.webp);
+    background-size: 100% 100%;
+    height: 150px;
+}
+.gym-course-3 small{
+    display: block;
+    background-color: #f6214b;
+    color: #fff;
+    padding: 10px 40px;
+    margin-left: 20px;
+    margin-top: 100px;
+    position: absolute;
+    display: flex;
+}
+.gym-course-4{
+    background-image: url(../image/illustrations/Course4.jpg);
+    background-size: 100% 100%;
+    height: 150px;
+}
+.gym-course-4 small{
+    display: block;
+    background-color: #f6214b;
+    color: #fff;
+    padding: 10px 40px;
+    margin-left: 20px;
+    margin-top: 100px;
+    position: absolute;
+    display: flex;
+}
+.gym-course-5{
+    background-image: url(../image/illustrations/Course5.jpg);
+    background-size: 100% 100%;
+    height: 150px;
+}
+.gym-course-5 small{
+    display: block;
+    background-color: #f6214b;
+    color: #fff;
+    padding: 10px 40px;
+    margin-left: 20px;
+    margin-top: 100px;
+    position: absolute;
+    display: flex;
+}
+.gym-course-6{
+    background-image: url(../image/illustrations/Course6.jpg);
+    background-size: 100% 100%;
+    height: 150px;
+}
+.gym-course-6 small{
+    display: block;
+    background-color: #f6214b;
+    color: #fff;
+    padding: 10px 40px;
+    margin-left: 20px;
+    margin-top: 100px;
+    position: absolute;
+    display: flex;
+}
+.common-repair{
+    height: 826px;
+}
+.pricing-23{
+    background-color: #f9f9ff;
+}
+hr{
+    color: #eeeeee;
+    height: 1px;
+}
+.back{
+    background-image: linear-gradient(rgba(238, 113, 29, 0.945),rgba(194, 85, 85, 0.918));
+    width: 80%;
+}
+.back ul{
+    list-style-type: none;
+}
+.trainers figure img:hover{
+    transform: rotate(360deg);
+}
+.transaction a:hover{
+    background-color: #2a2a2a !important;
+}
+
+@media (min-width: 576px){
+    .hero-section{
+        height: 300px;
+    }
+    .hero-section h1{
+        padding-top: 13%;
+    }
+    .common-repair{
+        height: 956px;
+    }
+    
+}
+@media (min-width: 768px){
+    .hero-section{
+        height: 400px;
+    }
+    .hero-section h1{
+        padding-top: 18%;
+    }
+    .BMI-calculation{
+        height: 300px;
+    }
+    .transaction a{
+        margin-left: 35%;
+    }
+    .common-repair{
+        height: 723px;
+    }
+}
+
+@media (min-width: 992px){
+    .hero-section{
+        height: 600px;
+    }
+    .hero-section h1{
+        padding-top: 15%;
+    }
+    .BMI-calculation{
+        height: 300px;
+    }
+    .common-repair{
+        height: 306px;
+    }
+    .sub-common{
+        margin-left: 8%;
+    }
+    .transaction small{
+        margin-left: 30%;
+    }
+    .transaction a{
+        margin-left: 42%;
+    }
+}
+@media (min-width: 1200px){
+    .sub-common{
+        margin-left: 0% !important;
+        padding-left: 0% !important;
+    }
+}

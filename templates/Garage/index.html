@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Garage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap Link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--Font-Awesome Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <!--AOS Link-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--External CSS link-->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <!--Wrapper-->
+        <section class="wrapper">
+            <!--Desktop Navbar-->
+            <nav class="navbar d-none d-md-block m-0 p-0">
+                <div class="bg-dark">
+                    <div class="d-flex justify-content-between text-white p-3 w-100 mx-auto sub-navbar">
+                        <div class="d-flex align-items-center ms-3">
+                            <div>
+                                <span><i class="far fa-clock text-muted"></i></span>
+                                <span>Week day: 08:00 am to 18:00 pm</span>
+                            </div>
+
+                            <div class="ms-3">
+                                <span><i class="far fa-envelope text-muted"></i></span>
+                                <span>Info.colorlib@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">
+                                <span><i class="fas fa-phone-alt"></i></span>
+                                <span>(+12) 345 678 910</span>
+                            </div>
+
+                            <div class="d-flex me-md-3 icons">
+                                <li class="me-md-2"><a href="#" class="text-decoration-none"><i class="fab fa-facebook-f text-white"></i></a></li>
+                                <li class="me-md-2"><a href="#" class="text-decoration-none"><i class="fab fa-twitter text-white"></i></a></li>
+                                <li class="me-md-2"><a href="#" class="text-decoration-none"><i class="fab fa-google text-white"></i></a></li>
+                                <li class="ms-md-2"><a href="#" class="text-decoration-none"><i class="fab fa-instagram text-white"></i></a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center p-4 w-100 mx-auto sub-navbar">
+                    <div class="ms-md-3">
+                        <a href="#"><img src="images/illustration/steering-wheel.png" alt=""></a>
+                        <span class="fw-bold"><a href="#" class="text-decoration-none text-dark">HVAC</a></span>
+                    </div>
+
+                    <div class="d-flex icons2">
+                            <li class="me-md-3"><a href="#" class="text-decoration-none text-dark">Home</a><span></span></li>
+                            <li class="me-md-3"><a href="#" class="text-decoration-none text-dark">Cars</a><span></span></li>
+                            <li class="me-md-3"><a href="#" class="text-decoration-none text-dark">Blog</a><span></span></li>
+                            <li class="me-md-3"><a href="#" class="text-decoration-none text-dark">Pages</a><span></span></li>
+                            <li class="me-md-3"><a href="#" class="text-decoration-none text-dark">About</a><span></span></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Contact</a><span></span></li>
+                    </div>
+
+                    <div class="d-flex me-md-3 icons3">
+                        <li class="me-md-2"><a href="#" class="text-decoration-none"><i class="fas fa-cart-plus text-dark"></i></a></li>
+                        <li class="me-md-2"><a href="#" class="text-decoration-none"><i class="fas fa-search text-dark"></i></a></li>
+                        <li class="me-md-2"><a href="#" class="text-decoration-none bg-danger text-white p-2 cart">Add Car</a></li>
+                    </div>
+                </div>
+            </nav>
+            <!--Mobile Navbar-->
+            <nav class="mobile-nav d-md-none">
+                <div class="d-flex justify-content-between">
+                    <div class="p-1">
+                        <a href="#"><img src="images/illustration/steering-wheel.png" alt=""></a>
+                        <span><a href="#" class="text-decoration-none text-dark fw-bold">HVAC</a></span>
+                    </div>
+
+                    <div class="p-1">
+                        <a href="!#" data-bs-target="#mob-nav" data-bs-toggle="offcanvas" class="text-dark">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <!--Offcanvas-->
+                        <div class="offcanvas offcanvas-end back" id="mob-nav">
+                            <div class="offcanvas-header">
+                                <h4 class="offcanvas-header text-danger fw-bold">HVAC</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+
+                            <div class="offcanvas-body icons2">
+                                <ul>
+                                    <li><a href="#" class="text-decoration-none text-dark">Home</a><span></span></li>
+                                    <li><a href="#" class="text-decoration-none text-dark">Cars</a><span></span></li>
+                                    <li><a href="#" class="text-decoration-none text-dark">Blog</a><span></span></li>
+                                    <li><a href="#" class="text-decoration-none text-dark">Pages</a><span></span></li>
+                                    <li><a href="#" class="text-decoration-none text-dark">About</a><span></span></li>
+                                    <li><a href="#" class="text-decoration-none text-dark">Contact</a><span></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--Hero Section-->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-5 pt-3 pt-md-5 text-white dream-car-23">
+                            <div id="typed-strings">
+                                <h2>Find your dream car</h2>
+                                <h2>Porsche Cayenne S</h2>
+                            </div>
+                            <span id="typed" class="display-5 fw-bold"></span>
+
+                            <div class="d-flex align-items-center">
+                                <small class="bg-white text-dark ps-1 pe-1 pb-1">Model 2019</small>
+                                <h4 class="ps-4 display-6 fw-bold">$399/Month</h4>
+                            </div>
+
+                            <div class="pt-3">
+                                <a href="#" class="bg-danger text-white p-2 text-decoration-none px-3 test">Test Drive</a>
+                                <a href="#" class="ms-3 p-1 text-decoration-none text-white border px-3">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-xl-3 dream-car mt-4 mb-4">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                  <a class="nav-link bg-white text-dark rounded-0 pb-3" aria-current="page" href="#">Car Rental</a>
+                                </li>
+                                <li class="nav-item ms-1">
+                                  <a class="nav-link bg-white text-dark rounded-0" href="#"><small>Buy Car</small></a>
+                                </li>
+                            </ul>
+
+                            <div class="bg-white col-xl-8 pt-1">
+                                <h3 class="pt-2 text-center">Find Your Dream Car</h3>
+                                <form>
+                                    <div class="d-flex flex-wrap justify-content-center buy-dream-car">
+                                        <div class="ps-5 ps-md-0 sub-buy-dream-car">
+                                            <label class="w-100" for="year">Select Year</label>
+                                            <select class="form-select mt-1" id="year">
+                                                <option selected>Select Year</option>
+                                                <option value="1">2020</option>
+                                                <option value="2">2019</option>
+                                                <option value="3">2018</option>
+                                                <option value="4">2017</option>
+                                                <option value="5">2016</option>
+                                                <option value="6">2015</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="ps-5 ps-md-4 sub-buy-dream-car1">
+                                            <label class="w-100" for="brand">Select Brand</label>
+                                            <select class="form-select mt-1" id="brand">
+                                                <option selected>Select Brand</option>
+                                                <option value="1">Acura</option>
+                                                <option value="2">Audi</option>
+                                                <option value="3">Bentley</option>
+                                                <option value="4">BMW</option>
+                                                <option value="5">Bugatti</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap justify-content-center buy-dream-car mt-3">
+                                        <div class="ps-5 ps-md-0 sub-buy-dream-car">
+                                            <label class="w-100" for="model">Select Model</label>
+                                            <select class="form-select mt-1" id="model">
+                                                <option selected>Select Model</option>
+                                                <option value="1">Q3</option>
+                                                <option value="1">A4</option>
+                                                <option value="1">AVENTADOR</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="ps-5 ps-md-3 sub-buy-dream-car1">
+                                            <label class="w-100" for="mileage">Select Mileage</label>
+                                            <select class="form-select mt-1" id="mileage">
+                                                <option selected>Select Mileage</option>
+                                                <option value="1">27</option>
+                                                <option value="2">25</option>
+                                                <option value="3">15</option>
+                                                <option value="4">10</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="ps-2 ps-sm-5 ps-md-3 mt-3">
+                                        <label for="range">Price Range: $800-$3,200.100</label>
+                                        <p><input type="range" id="range" class="col-11"></p>
+                                    </div>
+                                    <a href="#" class="btn btn-danger text-white rounded-0 ms-2 ms-sm-5 ms-md-3 mb-4 test" role="button">Searching</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Services Section-->
+            <section class="services text-center mt-5 overflow-hidden">
+                <small class="fs-5 text-danger">Our Services</small>
+                <h2 class="fw-bold">What We Offers</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="card rent-a-car" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/rent-car.webp" alt="">
+                            <div class="card-body">
+                                <h5>Rental a Cars</h5>
+                                <p>Consectetur adipiscing elit incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas.</p>
+                                <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3 mt-sm-0 rent-a-car" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/rent-car2.webp" alt="">
+                            <div class="card-body">
+                                <h5>Buying a Cars</h5>
+                                <p>Consectetur adipiscing elit incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas.</p>
+                                <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3 mt-md-0 rent-a-car" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/rent-car3.webp" alt="">
+                            <div class="card-body">
+                                <h5>Car Maintenance</h5>
+                                <p>Consectetur adipiscing elit incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas.</p>
+                                <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3 mt-md-0 rent-a-car" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/rent-car4.webp" alt="">
+                            <div class="card-body">
+                                <h5>Support 24/7</h5>
+                                <p>Consectetur adipiscing elit incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas.</p>
+                                <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Trusted-Auto Section-->
+            <section class="trusted-auto mt-5">
+                <div class="container pt-5">
+                    <div class="row justify-content-center">
+                        <div class="auto">
+                            <small class="text-danger fs-5">Our Feature</small>
+                            <h3>We are trusted name in auto</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                                
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <div class="mb-lg-5">
+                                <a href="#" class="bg-danger text-white text-decoration-none p-2 test">About Us</a>
+                                <a href="#" class="bg-dark text-white text-decoration-none p-2 ms-2">Our Partners</a>
+                            </div>
+                        </div>
+
+                        <div class="auto-car mt-4" data-aos="fade-up"
+                        data-aos-duration="3000">
+                            <img class="w-100" src="images/illustration/car.png.webp" alt="">
+                        </div>
+
+                        <div class="mt-3 pb-5 auto-services">
+                            <div class="d-flex justify-content-center">
+                                <div class="m-2">
+                                    <figure>
+                                        <img src="images/illustration/engine.webp" alt="">
+                                        <figcaption><small>Engine</small></figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="m-2">
+                                    <figure>
+                                        <img src="images/illustration/turbo.webp" alt="">
+                                        <figcaption><small>Turbo</small></figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <div class="m-2">
+                                    <figure>
+                                        <img src="images/illustration/colling.webp" alt="">
+                                        <figcaption><small>Colling</small></figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="m-2">
+                                    <figure>
+                                        <img src="images/illustration/suspension.webp" alt="">
+                                        <figcaption><small>Suspension</small></figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                                
+                            <div class="d-flex justify-content-center">
+                                <div class="m-2">
+                                    <figure>
+                                        <img src="images/illustration/electrical.webp" alt="">
+                                        <figcaption><small>Electrical</small></figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="m-2">
+                                    <figure>
+                                        <img src="images/illustration/brakes.webp" alt="">
+                                        <figcaption><small>Brakes</small></figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Car Section-->
+            <section class="car mt-5 overflow-hidden">
+                <small class="text-center text-danger d-block fs-5">Our car</small>
+                <h3 class="text-center">Best Vehicle Offers</h3>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="card col-sm-5 col-lg-3 mt-2" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/cars1.webp" alt="...">
+                            <div class="card-body">
+                                <small class="border pt-1 pb-1 ps-2 pe-2">2016</small>
+                                <p class="pt-2">Porsche cayenne turbo's</p>
+                                <span>35.000 <span class="text-muted">mi  |    Auto</span> |    700 <span class="text-muted">hp</span></span>
+                                <div class="d-flex mt-3">
+                                    <span class="bg-primary text-white p-2">For Rent</span>
+                                    <p class="ms-3 text-muted mt-2"><span class="text-danger">$218</span>/Month</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-sm-5 col-lg-3 mt-2"  data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/cars2.webp" alt="...">
+                            <div class="card-body">
+                                <small class="border pt-1 pb-1 ps-2 pe-2">2020</small>
+                                <p class="pt-2">Toyota camry asv50l-jeteku</p>
+                                <span>35.000 <span class="text-muted">mi  |  Auto</span> |  700 <span class="text-muted">hp</span></span>
+                                <div class="d-flex mt-3">
+                                    <span class="bg-danger text-white p-2">For Sale</span>
+                                    <p class="text-danger mt-2 ms-3">$73,900</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-sm-5 col-lg-3 mt-2" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/cars3.webp" alt="...">
+                            <div class="card-body">
+                                <small class="border pt-1 pb-1 ps-2 pe-2">2017</small>
+                                <p class="pt-2">Bmw s1000rr 2019 m</p>
+                                <span>35.000 <span class="text-muted">mi  |  Auto</span> |  700 <span class="text-muted">hp</span></span>
+                                <div class="d-flex mt-3">
+                                    <span class="bg-primary text-white p-2">For Rent</span>
+                                    <p class="text-muted mt-2 ms-3"><span class="text-danger">$299</span>/Month</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-sm-5 col-lg-3 mt-2"  data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/cars4.webp" alt="...">
+                            <div class="card-body">
+                                <small class="border pt-1 pb-1 ps-2 pe-2">2019</small>
+                                <p class="pt-2">Lamborghini huracan evo</p>
+                                <span>35.000 <span class="text-muted">mi  |  Auto</span> |  700 <span class="text-muted">hp</span></span>
+                                <div class="d-flex mt-3">
+                                    <span class="bg-danger text-white p-2">For Sale</span>
+                                    <p class="text-danger mt-2 ms-3">$120,000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-sm-5 col-lg-3 mt-2" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/cars5.webp" alt="...">
+                            <div class="card-body">
+                                <small class="border pt-1 pb-1 ps-2 pe-2">2018</small>
+                                <p class="pt-2">Audi q8 2020</p>
+                                <span>35.000 <span class="text-muted">mi  |  Auto</span> |  700 <span class="text-muted">hp</span></span>
+                                <div class="d-flex mt-3">
+                                    <span class="bg-primary text-white p-2">For Rent</span>
+                                    <p class="text-muted mt-2 ms-3"><span class="text-danger">$319</span>/Month</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-sm-5 col-lg-3 mt-2"  data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/cars6.webp" alt="...">
+                            <div class="card-body">
+                                <small class="border pt-1 pb-1 ps-2 pe-2">2016</small>
+                                <p class="pt-2">Mustang shelby gt500</p>
+                                <span>35.000 <span class="text-muted">mi  |  Auto</span> |  700 <span class="text-muted">hp</span></span>
+                                <div class="d-flex mt-3">
+                                    <span class="bg-danger text-white p-2">For Sale</span>
+                                    <p class="text-danger mt-2 ms-3">$730,900</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-sm-5 col-lg-3 mt-2" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/cars7.webp" alt="...">
+                            <div class="card-body">
+                                <small class="border pt-1 pb-1 ps-2 pe-2">2020</small>
+                                <p class="pt-2">Lamborghini aventador A90</p>
+                                <span>35.000 <span class="text-muted">mi  |  Auto</span> |  700 <span class="text-muted">hp</span></span>
+                                <div class="d-flex mt-3">
+                                    <span class="bg-primary text-white p-2">For Rent</span>
+                                    <p class="text-muted mt-2 ms-3"><span class="text-danger">$422</span>/Month</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-sm-5 col-lg-3 mt-2" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img src="images/illustration/cars8.webp" alt="...">
+                            <div class="card-body">
+                                <small class="border pt-1 pb-1 ps-2 pe-2">2017</small>
+                                <p class="pt-2">Porsche cayenne turbo s</p>
+                                <span>35.000 <span class="text-muted">mi  |  Auto</span> |  700 <span class="text-muted">hp</span></span>
+                                <div class="d-flex mt-3">
+                                    <span class="bg-primary text-white p-2">For Rent</span>
+                                    <p class="text-muted mt-2 ms-3"><span class="text-danger">$322</span>/Month</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Choose Us Section-->
+            <section class="Choose-us mt-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="m-3 choose-23">
+                            <h3>Why People Choose Us</h3>
+                            <p>Duis aute irure dolorin reprehenderits volupta velit dolore fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+                            <li><small><i class="fas fa-check-circle text-danger me-2"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></li>
+                            <li><small><i class="fas fa-check-circle text-danger me-2"></i>Integer et nisl et massa tempor ornare vel id orci.</small></li>
+                            <li><small><i class="fas fa-check-circle text-danger me-2"></i>Nunc consectetur ligula vitae nisl placerat tempus.</small></li>
+                            <li><small><i class="fas fa-check-circle text-danger me-2"></i>Curabitur quis ante vitae lacus varius pretium.</small></li>
+                            <div class="mt-3">
+                                <a href="#" class="text-decoration-none bg-danger text-white p-2 test">About Us</a>
+                            </div>
+                        </div>
+
+                        <div class="choose-image text-center p-3 p-lg-0">
+                            <img src="images/illustration/videocar.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--blog-->
+            <section class="blog mt-5">
+                <small class="text-center d-block text-danger fs-5">Our Blog</small>
+                <h3 class="text-center">Latest News Updates</h3>
+                <p class="text-center">Sign up for the latest Automobile Industry information and more. Duis aute irure dolorin reprehenderits volupta velit dolore fugiat.</p>
+
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="cards-23"  data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                            <img class="w-100" src="images/illustration/cards1.webp" alt="">
+                            <div class="mt-2">
+                                <h4>Benjamin Franklin S Method Of Habit Formation</h4>
+                                <p class="text-muted fs-5"><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel facilisis.</small></p>
+                                <a href="#" class="text-decoration-none text-muted">View More <span class="text-danger"><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                            </div>
+                        </div>
+
+                        <div class="mt-3 mt-sm-0 ms-sm-2 cards-23" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img class="w-100" src="images/illustration/cars4.webp" alt="">
+                            <div class="mt-2 mt-sm-3 mt-md-2">
+                                <h4>How To Set Intentions That Energize You</h4>
+                                <p class="text-muted fs-5"><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel facilisis.</small></p>
+                                <a href="#" class="text-muted text-decoration-none">View More <span class="text-danger"><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                            </div>
+                        </div>
+
+                        <div class="mt-3 mt-md-0 ms-md-2 cards-23" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img class="w-100" src="images/illustration/cards3.webp" alt="">
+                            <div class="mt-2">
+                                <h4>Burning Desire Golden Key Or Red Herring</h4>
+                                <p class="text-muted fs-5"><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel facilisis.</small></p>
+                                <a href="#" class="text-muted text-decoration-none">View More <span class="text-danger"><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Buy-Rent Section-->
+            <section class="container mt-5">
+                <div class="row justify-content-md-center">
+                    <div class="buy text-white p-3" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <h5>Do you want to buy a car</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+
+                    <div class="rent text-white mt-3 mt-lg-0 ms-lg-3 p-3" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <h5>Do you want to rent a car</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                </div>
+            </section>
+            <!--footer-->
+            <footer class="foot mt-4 mb-0 pb-0">
+                <div class="container pt-3">
+                    <div class="row justify-content-between text-white">
+                        <div class="text-center">
+                            <h2 class="text-center">Contact Us Now!</h2>
+                        </div>
+
+                        <div class="text-center">
+                            <span class="me-lg-2"><i class="fas fa-phone-alt"></i> (+12)345 678 910</span>
+                            <span><i class="far fa-envelope"></i> Colorlib@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="text-secondary">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-3 text-white about-us">
+                            <a href="#"><img src="images/illustration/steering-wheel.png" alt=""></a>
+                            <span><a href="#" class="text-decoration-none fw-bold text-white">HVAC</a></span>
+                            <p class="pt-2">Any questions? Let us know in store at 625 Gloria Union, California, United Stated or call us on (+1) 96 123 8888</p>
+                            <ul class="d-flex">
+                                <li class="p-1"><a href="#"><img src="images/illustration/facebook.png" alt=""></a></li>
+                                <li class="p-1"><a href="#"><img src="images/illustration/twitter.png" alt=""></a></li>
+                                <li class="p-1"><a href="#"><img src="images/illustration/google-plus.png" alt=""></a></li>
+                                <li class="p-1"><a href="#"><img src="images/illustration/skype.png" alt=""></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 text-white information">
+                            <h6>Information</h6>        
+                            <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Purchase</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Payment</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Shipping</a></li>
+                            <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Return</a></li>        
+                        </div>
+
+                        <div class="col-lg-3 text-white information">
+                            <h6>Information</h6>
+                                <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Hatchback</a></li>
+                                <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Sedan</a></li>
+                                <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> SUV</a></li>
+                                <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Crossover</a></li>    
+                        </div>
+
+                        <div class="col-lg-3 text-white pt-3 pt-lg-0">
+                            <h6>Top Brand</h6>
+                            <div class="d-flex">
+                                <div class="information">
+                                    <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Abarth</a></li>
+                                    <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Acura</a></li>
+                                    <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Alfa Romeo</a></li>
+                                    <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Audi</a></li>
+                                </div>
+
+                                <div class="information ms-3">
+                                    <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> BMW</a></li>
+                                    <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Chevrolet</a></li>
+                                    <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Ferrari</a></li>
+                                    <li><a href="#" class="text-muted text-decoration-none"><i class="fas fa-angle-right"></i> Honda</a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="pt-3 text-muted pb-3">Copyright ©2021 All rights reserved | This template is made with <i class="fas fa-heart text-white"></i> by Sourabh</p>
+                </div>
+            </footer>
+        </section>
+
+        <!--Javascript-->
+
+        <!--Offcanvas Script Link-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!--AOS Link-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!--Typed.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!--External JS Link-->
+        <script src="javascript/script.js"></script>
+    </body>
+</html>

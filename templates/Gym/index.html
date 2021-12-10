@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gym</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Bootstrap Link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--FontAwesome Cdn link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <!--AOS CDN link-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--External CSS Link-->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <!--Start of wrapper text-->
+        <section class="wrapper overflow-hidden">
+            <!--Desktop View Navbar-->
+            <nav class="container-fluid m-0 p-0 d-none d-md-block">
+                <div class="d-none d-md-flex justify-content-between align-items-center">
+                    <div class="ps-5 ms-xl-5 py-2 col-md-4 col-lg-3 col-xl-2 nav-start">
+                        <small>We believe we helps people for happier lives</small>
+                    </div>
+
+                    <div class="py-2">
+                        <a href="#" class="text-decoration-none">
+                        <img src="image/illustrations/logo.png.webp" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="px-3 py-2 me-5 mb-0">
+                        <div class="contact-number">
+                            <a href="" class="text-decoration-none pe-2 d-md-none d-lg-inline text-dark">+880 123 12 658 439</a>
+                            <a href="+880 123 12 658 439">     
+                            <span class="text-decoration-none pe-3 py-4 bg-danger"><img src="image/illustrations/telephone (1).png" class="ps-3" alt=""></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-0">
+                <div class="d-none d-md-flex justify-content-center navbar">
+                    <ul class="d-flex justify-content-lg-between justify-content-md-evenly min-vw-50">
+                        <li class="pe-md-3"><a href="#" class="text-decoration-none text-dark fs-6">Home</a><span class="underline-23"></span></li>
+                        <li class="pe-md-3"><a href="#" class="text-decoration-none text-dark fs-6">We Offer</a><span class="underline-23"></span></li>
+                        <li class="pe-md-3"><a href="#" class="text-decoration-none text-dark fs-6">Top Course</a><span class="underline-23"></span></li>
+                        <li class="pe-md-3"><a href="#" class="text-decoration-none text-dark fs-6">Schedule</a><span class="underline-23"></span></li>
+                        <li class="pe-md-3"><a href="#" class="text-decoration-none text-dark fs-6">Trainer</a><span class="underline-23"></span></li>
+                        <li class="pe-md-3"><a href="#" class="text-decoration-none text-dark fs-6">Plan</a><span class="underline-23"></span></li>
+                        <li><a href="#" class="text-decoration-none text-dark fs-6">Pages</a><span class="underline-23"></span></li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Mobile View Navbar-->
+            <nav class='mob-nav d-flex justify-content-between d-lg-none d-md-none px-3 py-2'>
+                <div class="logo">
+                    <a href="#" class="text-decoration-none"><img src="image/illustrations/logo.png.webp" alt=""></a>
+                </div>
+
+                <div>
+                    <a href="!#" data-bs-target="#mob-nav" data-bs-toggle="offcanvas" class="logo">
+                        <i class="fas fa-bars text-dark"></i>
+                    </a>
+                    <!--Offcanvas-->
+                    <div class="offcanvas offcanvas-end back" id="mob-nav">
+                        <div class="offcanvas-header">
+                            <h4 class="offcanvas-title"><img src="image/illustrations/logo.png.webp" alt=""></h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body mx-auto">
+                            <ul>
+                                <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+                                <li><a href="#" class="text-decoration-none text-white">We Offer</a></li>
+                                <li><a href="#" class="text-decoration-none text-white">Top Courses</a></li>
+                                <li><a href="#" class="text-decoration-none text-white">Schedule</a></li>
+                                <li><a href="#" class="text-decoration-none text-white">Trainer</a></li>
+                                <li><a href="#" class="text-decoration-none text-white">Plan</a></li>
+                                <li><a href="#" class="text-decoration-none text-white">Pages</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--Start of hero-section-->
+            <section class="hero-section text-center">
+                <h1 class="text-white fw-bold display-3 fade-in">Real Fitness</h1>
+                <h2 class="text-white fw-bold display-4 fade-in">Depends on exercise</h2>
+                <small class="text-white fs-5 fade-in">SHAPE YOUR BODY WELL.</small>
+            </section>
+            <!--Start of Regular Exercise-->
+            <section class="container text-center mt-5">
+                <h2 class="fw-bold">We care about what we offer</h2>
+                <small class="text-muted d-block fs-6">Who are in extremely love with eco friendly system.</small>
+                <div class="row justify-content-center mt-5">
+                    <!--Card 1-->
+                    <div class="col-10 col-sm-6 col-md-4 col-lg-3 shadow bgblack">
+                        <img src="image/illustrations/care1.png" alt="">
+                        <h4 class="mt-2">Regular Exercise</h4>
+                        <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                    <!--Card 2-->
+                    <div class="col-10 col-sm-6 col-md-4 col-lg-3 shadow ms-xl-3 mt-4 mt-sm-0 bgblack">
+                        <img src="image/illustrations/care2.png" alt="">
+                        <h4 class="mt-2">Training on the go</h4>
+                        <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                    <!--Card 3-->
+                    <div class="col-10 col-sm-6 col-md-4 col-lg-3 shadow ms-xl-3 mt-4 mt-md-0 bgblack">
+                        <img src="image/illustrations/care3.webp" alt="">
+                        <h4 class="mt-2">Body Building Packages</h4>
+                        <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                </div>
+            </section>
+            <!--BMI Calculation-->
+            <section class="text-center BMI-calculation mt-5">
+                <h3 class="pt-5 text-white fw-bold text-capitalize">Calculate your body mass index</h3>
+                <small class="text-white fs-6">Who are in extremely love with eco friendly system.</small>
+                    <div class="mt-5 calculation-23">
+                        <input class="py-2 px-3 text-white border" type="text" placeholder="Your height(Inches)">
+                        <input class="my-2 px-3 py-2 my-md-0 ms-lg-3 text-white border" type="text" placeholder="Your Weight(lbs)">
+                        <a href="#" class="btn bg-white rounded-pill px-3 ms-lg-3 py-2" role="button">Calculate your BMI</a>
+                    </div>
+            </section>
+            <!--Courses Section-->
+            <section class="container mt-5 text-lg-center" >
+                <h2 class="fw-bold">Top Courses That are open for Students</h2>
+                <small class="text-muted fs-6">Who are in extremely love with eco friendly system.</small>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-11 col-sm-6 col-md-4 col-lg-3 min-vw-50 me-md-3 gym-course">
+                            <!--Course 1-->
+                            <div class="gym-course-1">
+                                <small class="py-2 px-3">Courses Available</small>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-2">
+                                <div>
+                                    <a href="#" class="text-decoration-none text-dark fw-bold">Running Classes</a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none text-danger fw-bold">$275</a>
+                                </div>    
+                            </div>
+                        </div>
+                        <!--Course 2-->
+                        <div class="col-11 col-sm-6 col-md-4 col-lg-3 min-vw-50 me-md-3 gym-course">
+                            <div class="gym-course-2 mt-3 mt-lg-0">
+                                <small class="py-2 px-3">Courses Available</small>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-2">
+                                <div>
+                                    <a href="#" class="text-decoration-none text-dark fw-bold">Running Classes</a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none text-danger fw-bold">$200</a>
+                                </div>    
+                            </div>
+                        </div>
+                        <!--Course 3-->
+                        <div class="col-11 col-sm-6 col-md-4 col-lg-3 min-vw-50 me-md-3 gym-course">
+                            <div class="gym-course-3 mt-3 mt-lg-0">
+                                <small class="py-2 px-3">Courses Available</small>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-2">
+                                <div>
+                                    <a href="#" class="text-decoration-none text-dark fw-bold">Running Classes</a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none text-danger fw-bold">$225</a>
+                                </div>    
+                            </div>
+                        </div>
+                        <!--Course 4-->
+                        <div class="col-11 col-sm-6 col-md-4 col-lg-3 min-vw-50 me-md-3 mt-lg-3 gym-course"> 
+                            <div class="gym-course-4 mt-3 mt-lg-0">
+                                <small class="py-2 px-3">Courses Available</small>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-2">
+                                <div>
+                                    <a href="#" class="text-decoration-none text-dark fw-bold">Running Classes</a>
+                                </div>
+
+                                <div>
+                                    <a href="#" class="text-decoration-none text-danger fw-bold">$300</a>
+                                </div>    
+                            </div>
+                        </div>
+                        <!--Course 5-->
+                        <div class="col-11 col-sm-6 col-md-4 col-lg-3 min-vw-50 me-md-3 mt-lg-3 gym-course">
+                            <div class="gym-course-5 mt-3 mt-lg-0">
+                                <small class="py-2 px-3">Courses Available</small>    
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-2">
+                                <div>
+                                    <a href="#" class="text-decoration-none text-dark fw-bold">Running Classes</a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none text-danger fw-bold">$500</a>
+                                </div>    
+                            </div>
+                        </div>
+                        <!--Course 6-->
+                        <div class="col-11 col-sm-6 col-md-4 col-lg-3 min-vw-50 me-md-3 mt-lg-3 gym-course">
+                            <div class="gym-course-6 mt-3 mt-lg-0">
+                                <small class="py-2 px-3">Courses Available</small>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-2">
+                                <div>
+                                    <a href="#" class="text-decoration-none text-dark fw-bold">Running Classes</a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none text-danger fw-bold">$250</a>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!--Start of common-repair-->
+            <section class="container-fluid bg-dark mt-5 common-repair">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-5 col-xl-6 d-flex flex-wrap flex-md-nowrap py-4 py-md-0 ps-0">
+                        <div class="col-7">
+                            <img class="img-fluid" src="image/illustrations/fitness1.webp" alt="">
+                        </div>
+                        
+                        <div class="py-3 px-2 py-md-2 px-md-2 text-white">
+                            <span class="text-secondary">Basic & Common Repairs</span>
+                            <h1 class="text-danger fw-bold">Basic Revolutions</h1>
+                            <small class="text-muted fs-6">Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical.</small>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-5 col-xl-6 d-flex flex-wrap flex-md-nowrap ps-0 py-4 py-md-0 pt-md-4 pt-lg-0 py-xl-0 sub-common">
+                        <div class="col-7">
+                            <img class="img-fluid" src="image/illustrations/fitness2.jpg" alt="">
+                        </div>
+
+                        <div class="py-3 py-md-2 px-2 px-md-2 text-white">
+                            <span class="text-secondary">Basic & Common Repairs</span>
+                            <h1 class="text-danger fw-bold">Basic Revolutions</h1>
+                            <small class="text-muted fs-6">Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical.</small>
+                        </div>
+                    </div>
+                </div>    
+            </section >
+            <!--Plan Table-->
+            <section class="container text-center mt-5"> 
+                <h2 class="fw-bold">Schedule your Fitness Process</h2>
+                <small class="d-block text-muted fs-6">Who are in extremely love with eco friendly system.</small>
+                <div class="row col-6 col-sm-8 justify-content-center mx-auto mt-5">
+                    <table class="table table-stripped table-bordered course-table ">
+                        <tr class="table-active">
+                            <th><small>Course Name</small></th>
+                            <th><small>Mon</small></th>
+                            <th><small>Tue</small></th>
+                            <th><small>Wed</small></th>
+                            <th><small>Thu</small></th>
+                            <th><small>Fri</small></th>
+                        </tr>
+
+                        <tr class="schedule">
+                            <td class="text-muted"><small>Fitness Aero</small></td>
+                            <td class="text-muted"><small>10:00<br>  02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                        </tr>
+
+                        <tr class="schedule">
+                            <td class="text-muted"><small>Senior Fitness</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                        </tr>
+
+                        <tr class="schedule">
+                            <td class="text-muted"><small>Fitness Aero</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                        </tr>
+
+                        <tr class="schedule">
+                            <td class="text-muted"><small>Senior Fitness</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                        </tr>
+
+                        <tr class="schedule">
+                            <td class="text-muted"><small>Senior Fitness</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                        </tr>
+
+                        <tr class="schedule">
+                            <td class="text-muted"><small>Senior Fitness</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                            <td class="text-muted"><small>10:00 <br> 02:00</small></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!--Experienced Trainers-->
+            <section class="container text-center mt-5">
+                <h2 class="fw-bold">Our Experienced Trainers</h2> 
+                <small class="text-muted d-block fs-6">Who are in extremely love with eco friendly system.</small>
+                <div class="row justify-content-center mt-5 trainers">
+                    <!--Trainer 1-->
+                    <figure class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-3" data-aos="fade-up-right" data-aos-duration="2000">
+                        <img class="img-fluid" src="image/illustrations/trainer1.jpg" alt="">
+                        <figcaption class="text-center mt-3"><small class="fw-bold fs-5">Ethel Davis</small>
+                            <small class="text-muted d-block fs-6">Managing Director (Sales)</small>
+                        </figcaption>
+                    </figure>
+                    <!--Trainer 2-->
+                    <figure class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="img-fluid" src="image/illustrations/trainer2.jpg" alt="">
+                        <figcaption class="text-center mt-3"><small class="fw-bold fs-5">Rodney Cooper</small>
+                            <small class="text-muted d-block fs-6">Creative Art Director (Project)</small>
+                        </figcaption>
+                    </figure>
+                    <!--Trainer 3-->
+                    <figure class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-duration="2000">
+                        <img class="img-fluid" src="image/illustrations/trainer3.jpg" alt="">
+                        <figcaption class="text-center mt-3"><small class="fw-bold fs-5">Dara Walker</small>
+                            <small class="text-muted d-block fs-6">Senior Core Developer</small>
+                        </figcaption>
+                    </figure>
+                    <!--Trainer 4-->
+                    <figure class="col-12 col-sm-6 col-md-3 col-lg-4 col-xl-3" data-aos="fade-up-left" data-aos-duration="2000">
+                        <img class="img-fluid" src="image/illustrations/trainer4.jpg" alt="">
+                        <figcaption class="text-center mt-3"><small class="fw-bold fs-5">Lena Keller</small>
+                            <small class="text-muted d-block fs-6">Creative Content Developer</small>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!--Perfect Plan-->
+            <section class="container mt-5">
+                <h2 class="text-center fw-bold">Choose the perfect plan for you</h2>
+                <small class="text-muted text-center d-block fs-6">Who are in extremely love with eco friendly system.</small>
+                    <div class="row justify-content-evenly mt-5">
+                        <div class="col-10 col-sm-8 col-md-4 col-lg-3 px-0 pricing-23" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="d-flex justify-content-between align-items-center px-2 pt-4 mt-2 mt-md-0">
+                                <p>Standard <br><small>For the individuals</small></p>
+                                <h1>£199</h1>
+                            </div>
+                            
+                            <div class="purchase">
+                            <hr>
+                                <div class="ms-4">
+                                    <small class="w-100">“Few would argue that, <br>despite the advancements</small>
+                                </div>
+                            <hr>
+                                <div class="px-4">
+                                    <small class="line-height-3">2.5 GB Free Photos<br>
+                                        Secure Online Transfer Indeed<br>
+                                        Unlimited Styles for interface<br>
+                                        Reliable Customer Service<br>
+                                        Manual Backup Provided
+                                    </small>
+
+                                    <div class="py-4">
+                                        <a href="#" class="text-decoration-none bg-black px-4 py-2 text-white">Purchase Plan <span class="text-white"><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-10 col-sm-8 col-md-4 col-lg-3 ms-1 mt-2 mt-md-0 px-0 pricing-23" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="d-flex justify-content-between align-items-center px-2 pt-4">
+                                <p>Standard <br><small>For the individuals</small></p>
+                                <h1>£199</h1>
+                            </div>
+                    
+                            <div class="purchase">
+                            <hr>
+                                <div class="ms-4 purchase">
+                                    <small class="w-100">“Few would argue that, <br>despite the advancements</small>
+                                </div>
+                            <hr>
+                                <div class="px-4">
+                                    <small class="line-height-3">2.5 GB Free Photos<br>
+                                        Secure Online Transfer Indeed<br>
+                                        Unlimited Styles for interface<br>
+                                        Reliable Customer Service<br>
+                                        Manual Backup Provided
+                                    </small>
+
+                                    <div class="py-4">
+                                        <a href="#" class="text-decoration-none bg-black px-4 py-2 text-white">Purchase Plan <span class="text-white"><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-10 col-sm-8 col-md-4 col-lg-3 ms-1 mt-2 mt-lg-0 px-0 pricing-23" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="d-flex justify-content-between align-items-center px-2 pt-4">
+                                <p>Standard <br><small>For the individuals</small></p>
+                                <h1>£199</h1>
+                            </div>
+                        
+                            <div class="purchase">
+                            <hr>
+                                <div class="ms-4 purchase">
+                                    <small class="w-100">“Few would argue that, <br>despite the advancements</small>
+                                </div>
+                            <hr>
+                                <div class="px-4 purchase">
+                                    <small class="line-height-3">2.5 GB Free Photos<br>
+                                    Secure Online Transfer Indeed<br>
+                                    Unlimited Styles for interface<br>
+                                    Reliable Customer Service<br>
+                                    Manual Backup Provided
+                                    </small>
+
+                                    <div class="py-4">
+                                        <a href="#" class="text-decoration-none bg-black px-4 py-2 text-white">Purchase Plan <span class="text-white"><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>               
+            </section>
+            <!--Start of Transaction-->
+            <section class="transaction mt-5">
+                <div class="text-white py-5 px-3">
+                    <h2 class="fw-bold text-center">Huge Transaction in last Week</h2>
+                    <small class="col-lg-5 d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</small>
+                    <a href="#" class="col-md-4 col-lg-2 d-block py-2 px-3 mt-4 rounded-pill text-white btn" role="button">Become a Member</a>
+                </div>
+            </section>
+            <!--Footer-->
+            <footer class="container mt-5">
+                <div class="row justify-content-md-center">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center text-sm-start ps-lg-2">
+                        <h3>About Us</h3>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center text-sm-start ps-lg-2">
+                        <h3>Contact Us</h3>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                        <small class="text-danger fw-bold fs-6 d-block">012-6532-568-9746</small>
+                        <small class="text-danger fw-bold fs-6 d-block">012-6532-569-9748</small>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center text-sm-start ps-lg-2 pt-md-0 pt-3">
+                        <h3>Newsletter</h3>
+                        <p class="text-secondary">You can trust us. we only send offers, not a single spam.</p>
+                        <div class="input-group">
+                        <input type="email" placeholder="Email Address" class="form-control">
+                        <span class="input-group-text bg-danger text-white"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row justify-content-between px-3 mt-5 ms-lg-5">
+                        <div class="col-md-8">
+                            <p>Copyright ©2021 All rights reserved | This template is made with by <span class="text-danger">Sourabh</span></p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 d-flex flex-wrap justify-content-between px-5 pb-3">
+                            <div class="pe-1">
+                                <a href="#"><img src="image/illustrations/facebook.png" alt=""></a>
+                            </div>
+
+                            <div class="pe-1">
+                                <a href="#"><img src="image/illustrations/twitter.png" alt=""></a>
+                            </div>
+
+                            <div class="pe-1">
+                                <a href="#"><img src="image/illustrations/internet.png" alt=""></a>
+                            </div>
+
+                            <div class="pe-1 be-icon">
+                                <a href="#"><i class="fab fa-behance-square text-dark"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!--Javascript-->
+        <!--Offcanvas-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!--AOS script-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="javascript/script.js"></script>
+    </body>
+<html>

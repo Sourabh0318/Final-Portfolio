@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --bs-navbar: 'Lato', sans-serif;
+    --bs-hero-section: 'Noto Sans', sans-serif;
+    --bs-service: 'Courier Prime', monospace;
+}
+
+/*Navbar*/
+.navbar{
+    font-family: var(--bs-navbar);
+}
+.back{
+    background-image: linear-gradient(rgba(134, 114, 114, 0.5),rgba(150, 135, 135, 0.5));
+    width: 70%;
+}
+.icons li{
+    list-style-type: none;
+}
+.icons2{
+    list-style-type: none;
+}
+.icons3{
+    list-style-type: none;
+}
+.icons2 span{
+    width: 0;
+    height: 2px;
+    display: block;
+    background: rgb(231, 59, 59);
+}
+.icons2 li:hover span{
+    width: 100%;
+}
+.icons3 .cart:hover{
+    background-color: black !important;
+    color: white;
+}
+/*Hero Section*/
+.hero-section{
+    background-image: url(../images/background/hero-bg.jpg.webp);
+    background-size: 100% 100%;
+    font-family: var(--bs-hero-section);
+}
+.test:hover{
+    background-color: black !important;
+}
+.dream-car{
+    width: 75%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.dream-car-23{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.buy-dream-car{
+    width: 75%;
+}
+
+
+/*Services*/
+.services{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rent-a-car{
+    width: 70%;
+    margin: 0 auto;
+}
+.rent-a-car img{
+    margin: 0 auto;
+    width: 20%;
+    padding-top: 15px;
+}
+.rent-a-car:hover{
+    background-color: rgba(238, 27, 27, 0.829);
+    color: white;
+}
+/*Trusted auto section*/
+.trusted-auto{
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.auto-car{
+    width: 100%;
+    
+}
+.trusted-auto:hover img{
+    animation: rotate 2s ease-in-out;
+}
+@keyframes rotate{
+    50%{
+        transform: rotateY(360deg);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+}
+/*Choose-Us Section*/
+.Choose-us{
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.choose-23 li{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.choose-image img{
+    width: 90%;
+}
+
+/*Blog Section*/
+.blog{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cards-23{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/*Buy-Rent Section*/
+.buy{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/background/cars1.webp);
+    background-size: 100% 100%;
+}
+.rent{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/background/cars2.webp);
+    background-size: 100% 100%;
+}
+
+/*Footer*/
+.foot{
+    background-image: url(../images/background/footer-bg.jpg.webp);
+    background-size: 100% 100%;
+}
+.about-us ul{
+    list-style-type: none;
+}
+.information li{
+    list-style-type: none;
+}
+
+
+
+@media (min-width: 576px){
+    .rent-a-car{
+        width: 45%;
+    }
+    .cards-23{
+        width: 45%;
+    }
+    .cards-23 img{
+        height: 150px;
+    }
+}
+
+@media (min-width:768px){
+    .navbar ul{
+        list-style-type: none;
+    }
+    .dream-car{
+        width: 55%;
+    }
+    .buy-dream-car{
+        width: 100%;
+    }
+    .cards-23{
+        width: 30%;
+    }
+}
+
+@media (min-width:992px){
+    .hero-section{
+        height: 600px;
+    }
+    .dream-car{
+        margin-top: 15% !important;
+    }
+    .sub-buy-dream-car{
+        width: 40%;
+    }
+    .sub-buy-dream-car1{
+        width: 40%;
+        margin-left: 10%;
+    }
+    .rent-a-car{
+        width: 22%;
+    }
+    .auto{
+        width: 30%;
+    }
+    .auto-car{
+        width: 33%;
+    }
+    .auto-services{
+        width: 30%;
+    }
+    .buy{
+        width: 45%;
+    }
+    .rent{
+        width: 45%;
+    }
+    .about-us{
+        width: 20%;
+    }
+    .choose-23{
+        width: 37%;
+    }
+    .choose-image{
+        width: 54%;
+    }
+    .choose-image img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200){
+    .sub-navbar{
+        width: 80% !important;
+    }
+}
